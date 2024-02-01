@@ -31,7 +31,7 @@ export const NavNoImage = () => {
         <div className="itens">
           <Link to="/NexusDigital/sobre">Sobre nós</Link>
           <Link to="/NexusDigital/portfolio">Portifólio</Link>
-          <a href="https://api.whatsapp.com/send?phone=11970124725" target="_blank" rel="noopener noreferrer">Contato</a>
+          <a href="https://api.whatsapp.com/send?phone=5511970124725" target="_blank" rel="noopener noreferrer">Contato</a>
         </div>
         <MenuHamburger />
       </NavbarContainer>

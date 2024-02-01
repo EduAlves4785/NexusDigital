@@ -63,7 +63,8 @@ export const SobreInicio = styled.section`
 
     .text-container {
       width: 85%;
-      height: 20rem;
+      border-radius: 5px;
+      height: 16rem;
       padding: 1rem;
       backdrop-filter: blur(10px);
       background-color: rgba(255, 255, 255, 0.2);
@@ -88,7 +89,7 @@ export const SobreInicio = styled.section`
 
 export const Servicos = styled.section`
   width: 100%;
-  height: 45rem;
+  height: 33rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,9 +118,13 @@ export const Servicos = styled.section`
       gap: 2rem;
       background-color: #f2f2f2;
       width: 18rem;
-      height: 25rem;
+      height: 22rem;
       border-radius: 10px;
       transition: 0.3s;
+
+      .icone{
+        font-size: 50px;
+      }
 
       h1 {
         width: 100%;
@@ -144,7 +149,7 @@ export const Servicos = styled.section`
 
   @media screen and (max-width: 780px) {
     & {
-      height: 85rem;
+      height: 75rem;
 
       h1 {
         font-size: 30px;
@@ -160,7 +165,7 @@ export const Servicos = styled.section`
       div {
         width: 85%;
         padding: 1rem;
-        height: 24rem;
+        height: 20rem;
 
         h1 {
           font-size: 25px;
@@ -175,7 +180,7 @@ export const Servicos = styled.section`
         }
 
         .icone {
-          display: 20px;
+          font-size: 45px;
         }
       }
     }
@@ -184,74 +189,85 @@ export const Servicos = styled.section`
 
 export const FocoEmpresa = styled.section`
   width: 100%;
-  height: 35rem;
+  height: 30rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin-top: 1rem;
+  justify-content: center;
 
-  div:first-child {
-    width: 50%;
-    height: 25rem;
-    padding: 2rem;
+  .itens {
     display: flex;
-    flex-direction: column;
-    align-items: last baseline;
-    gap: 1rem;
-    background-color: #535aa4;
-    color: white;
-    border-bottom-right-radius: 20%;
+    padding: 2rem;
+    height: 25rem;
 
-    h1 {
-      font-size: 50px;
-    }
+    div:first-child {
+      background-color: #837fd8;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+      align-items: center;
+      font-size: 22px;
+      height: 23rem;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      color: #fafafa;
 
-    p {
-      font-size: 24px;
-      text-align: justify;
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+        font-weight: 300;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      ul li:before {
+        margin-right: 1rem;
+        color: #47ff05;
+        content: "✓";
+      }
     }
   }
 
-  div:last-child {
-    width: 50%;
-    padding: 3rem;
-    height: 28rem;
-
-    img {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-    }
+  img {
+    object-fit: cover;
+    width: 40rem;
+    height: 25rem;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 4px 0px 5px 0px rgba(0, 0, 0, 0.75);
   }
 
   @media screen and (max-width: 780px) {
     & {
+      height: 61rem;
+    }
+
+    .itens {
       flex-direction: column;
-      height: 60rem;
+      width: 88%;
+      height: 95%;
+      padding: 1rem;
+      gap: 1rem;
 
-      div:first-child {
-        width: 85%;
-        height: 65%;
-        padding: 1rem;
+      div:first-child{
+        height: auto;
+        font-size: 17px;
         border-radius: 8px;
-
-        h1 {
-          font-size: 30px;
-          text-align: center;
-        }
-
-        p {
-          font-size: 17px;
+        
+        h1{
           text-align: center;
         }
       }
+    }
 
-      div:last-child {
-        padding: 1rem;
-        width: 85%;
-        height: 100%;
-      }
+    img{
+      width: 100%;
+      box-shadow: none;
+      border-radius: 8px;
     }
   }
 `;

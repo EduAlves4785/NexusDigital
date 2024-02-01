@@ -35,7 +35,7 @@ export const Navbar = () => {
           <Link to="/NexusDigital/sobre">Sobre nós</Link>
           <Link to="/NexusDigital/portfolio">Portifólio</Link>
           <a
-            href="https://api.whatsapp.com/send?phone=11970124725"
+            href="https://api.whatsapp.com/send?phone=5511970124725"
             target="_blank"
             rel="noopener noreferrer"
           >
