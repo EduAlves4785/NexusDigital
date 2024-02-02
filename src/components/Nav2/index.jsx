@@ -29,6 +29,7 @@ export const NavNoImage = () => {
           <Link to="/NexusDigital"><img src={logo} alt="Logo da Nexus" /></Link>
         </div>
         <div className="itens">
+          <Link to="/NexusDigital">Home</Link>
           <Link to="/NexusDigital/sobre">Sobre nós</Link>
           <Link to="/NexusDigital/portfolio">Portifólio</Link>
           <a href="https://api.whatsapp.com/send?phone=5511970124725" target="_blank" rel="noopener noreferrer">Contato</a>

@@ -16,6 +16,7 @@ export const SobreInicio = styled.section`
 
     h1 {
       width: 32rem;
+      font-size: 28px;
       text-align: left;
 
       span {
@@ -26,7 +27,7 @@ export const SobreInicio = styled.section`
     p {
       width: 32rem;
       font-weight: 300;
-      font-size: 18px;
+      font-size: 25px;
     }
 
     a {

@@ -20,6 +20,7 @@ export const MenuHamburger = () => {
         </label>
             <div id="menu" className={menuOpen ? 'open' : ''}>
                 <ul>
+                    <li><Link to="/NexusDigital">Home</Link></li>
                     <li><Link to="/NexusDigital/sobre">Sobre nós</Link></li>
                     <li><Link to="/NexusDigital/portfolio">Portfólio</Link></li>
                     <li><a href="https://api.whatsapp.com/send?phone=5511970124725" target="_blank" rel="noopener noreferrer">Contato</a></li>

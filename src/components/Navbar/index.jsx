@@ -32,6 +32,7 @@ export const Navbar = () => {
           </Link>
         </div>
         <div className="itens">
+          <Link to="/NexusDigital">Home</Link>
           <Link to="/NexusDigital/sobre">Sobre nós</Link>
           <Link to="/NexusDigital/portfolio">Portifólio</Link>
           <a
